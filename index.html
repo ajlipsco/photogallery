@@ -1,11 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>TK Photography</title>
 </head>
 <body>
-    
+    <header>
+        <h1>TK Photography</h1>
+        <nav>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#top">top</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <div class="Pgallery">
+                <figure>
+                    <img src="images/Chile.png" alt="Chilean beach with waves.">
+                    <figcaption class="type1">Chile, 2001</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Guatemala.png" alt="Landscape featuring a lake wiht mountains in the background and purple flowers in the foreground.">
+                    <figcaption class="type3">Guatemala, 1997</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Hawaii.png" alt="Lush mountainous island in Hawaii.">
+                    <figcaption class="type1">Hawaii, 2010</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Iran.png" alt="Iranian landscape featuring purple flowers in the foreground.">
+                    <figcaption class="type2">Iran, 1999</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Ireland.png" alt="The rolling green hills of Ireland.">
+                    <figcaption class="type2">Ireland, 2012</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Italy.png" alt="View through the trees of the mountains in Italy.">
+                    <figcaption class="type4">Italy, 2015</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Moab-Desert.png" alt="Moad Desert landscape featuring a sunburst.">
+                    <figcaption class="type1">Moab Desert, 2020</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Rocky-Mountains.png" alt="Towering rock formations of the Rocky Mountains">
+                    <figcaption class="type2">Rocky Mountains, 2009</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Switzerland.png" alt="Mountainous landscape of Switzerland with snow.">
+                    <figcaption class="type2">Switzerland, 2014</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/UK.png" alt="Vast green open field in the UK.">
+                    <figcaption class="type2">UK, 2005</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/USA.png" alt="Lush open field with colorful wildflowers.">
+                    <figcaption class="type2">USA, 2021</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Wyoming.png" alt="Wyoming Landscape with mountains in the background.">
+                    <figcaption class="type3">Wyoming, 2021</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="contact">
+            <form>
+            <h2>Contact</h2>   
+                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <!--Your contact information -->
+                <div class="row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your full name">
+                </div>
+
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address"> 
+                </div>
+
+                <div class="row">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="What can I help you with?" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="row">
+                <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+
+           
+        </section>
+    </main>
+    <footer>
+        <small>Copyright 2021 TK Photography</small>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,284 @@
+/*CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Begin my CSS*/
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    min-width: 485px ;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+main {
+    background-color: #000000;
+}
+
+ /* Text Styles*/
+
+p {
+    font-size: 1.25em;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #007d7b;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input, textarea {
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Navigation*/
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding-top: 35px;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    margin: 15px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: #007d7b;
+    text-decoration: none;
+}
+
+nav a:focus {
+    color: #007d7b;
+    text-decoration: none;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border: 5px solid #ffffff;
+    background-color: #000000;
+    z-index: 1;
+}
+
+/*About and Gallery*/
+
+#about, #gallery {
+    background-color: #ffffff;
+    color: #000000;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.Pgallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+}
+
+figure {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.type1 {
+    color: #ffffff;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+
+.type3 {
+    color: #ffffff;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+}
+
+.type2 {
+    color: #000000;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+}
+
+.type4 {
+    color: #000000;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+}
+
+/*CONTACT */
+#contact {
+    color: #ffffff;
+    background-color: #000000;
+    width: 80%;
+    margin: auto;
+}
+
+ form p {
+    text-align: center;
+ }
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 50px;
+    justify-content: center;
+ }
+ 
+ ::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+ }
+ input:invalid {
+    background-color: rgba(0, 0, 0, 50);
+ }
+#submit {
+    background-color: #007d7b;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: #ffffff;
+    color: #007d7b;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Larger Screens*/
+
+@media screen and (min-width: 880px) {
+    .Pgallery {
+        display: grid ;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        justify-content: right;
+        margin-right: 100px;
+    }
+    
+}
+
+@media screen and (min-width: 1300px) {
+    .Pgallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav ul {
+        justify-content: right;
+        margin-right: 100px;
+    }
+    img {
+        width: 100%;
+    }  
+}
